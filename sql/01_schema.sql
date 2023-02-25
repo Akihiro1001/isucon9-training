@@ -36,7 +36,6 @@ CREATE TABLE `items` (
 alter table items add index (created_at,id);
 alter table items add index (seller_id,created_at,id);
 alter table items add index (buyer_id,created_at,id);
-alter table items add index (category_id,created_at,id);
 
 DROP TABLE IF EXISTS `transaction_evidences`;
 CREATE TABLE `transaction_evidences` (
